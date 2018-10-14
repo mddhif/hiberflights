@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+       
+<hibernate-mapping package="flights">
+<class name ="Flight" table="Flights">
+<id name="id" column="ID"><generator class="native"/> </id>
+<property name="Year" column="Year"/>
+<property name="Month" column="Month"/>
+<property name="Day" column="Day"/>
+<property name="DepTime" column="Deptime"/>
+<property name="ArrTime" column="Arrtime"/>
+<property name="UniqueCarrier" column="UniqueCarrier"/>
+<property name="TailNum" column="TailNum"/>
+<property name="FlightNum" column="FlightNum"/>
+<property name="ActualElapsedTime" column="ActualElapsedTime"/>
+<property name="AirTime" column="AirTime"/>
+<property name="Origin" column="Origin"/>
+<property name="Dest" column="Dest"/>
+<property name="Distance" column="Distance"/>
+</class>
+</hibernate-mapping>
